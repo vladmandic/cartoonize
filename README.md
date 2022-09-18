@@ -8,3 +8,5 @@
 - tf: <https://github.com/FlavioLorenzi/cartoonGAN_tensorflow2>
 - torch: <https://github.com/FilipAndersson245/cartoon-gan>
 - massive: <https://github.com/happy-jihye/Cartoon-StyleGAN>
+
+- animegan onnx: https://github.com/xuanandsix/AnimeGANv3-onnxruntime-demo

@@ -41,8 +41,8 @@ async function detect() {
   log('predict:', Math.round(t1 - t0), 'ms');
   t.squeeze = tf.squeeze(t.cartoon);
 
-  t.mul = tf.mul(t.squeeze, 0.5);
-  t.add = tf.add(t.mul, 0.5);
+  t.mul = tf.mul(t.squeeze, 1);
+  t.add = tf.add(t.mul, 1);
   t.clipped = tf.clipByValue(t.add, 0, 1) as tf.Tensor3D;
   tf.browser.toPixels(t.clipped as tf.Tensor3D, canvas);
 
